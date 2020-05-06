@@ -41,37 +41,37 @@
             android:padding="10dp"
             android:id="@+id/g1"
             android:layout_width="100dp"
-            android:src="@drawable/girlone"/>
+            android:src="@drawable/hwoman1"/>
         <ImageView
             android:layout_height="100dp"
             android:padding="10dp"
             android:id="@+id/b2"
             android:layout_width="100dp"
-            android:src="@drawable/boytwo"/>
+            android:src="@drawable/hman1"/>
         <ImageView
             android:layout_height="100dp"
             android:padding="10dp"
             android:id="@+id/g2"
             android:layout_width="100dp"
-            android:src="@drawable/girlthree"/>
+            android:src="@drawable/hwoman2"/>
         <ImageView
         android:layout_height="100dp"
         android:padding="10dp"
             android:id="@+id/b1"
         android:layout_width="100dp"
-        android:src="@drawable/boy"/>
+        android:src="@drawable/hman2"/>
         <ImageView
             android:layout_height="100dp"
             android:padding="10dp"
             android:id="@+id/g3"
             android:layout_width="100dp"
-            android:src="@drawable/girlfour"/>
+            android:src="@drawable/hwoman3"/>
         <ImageView
             android:layout_height="100dp"
             android:id="@+id/b3"
             android:padding="10dp"
             android:layout_width="100dp"
-            android:src="@drawable/boythree"/>
+            android:src="@drawable/hman3"/>
 
 
     </GridLayout>

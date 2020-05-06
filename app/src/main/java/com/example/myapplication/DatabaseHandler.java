@@ -54,7 +54,7 @@ public class DatabaseHandler  extends SQLiteOpenHelper {
     int deleteReminder(String name)
     {
         SQLiteDatabase db = this.getWritableDatabase();
-        return db.delete(TABLE_REMINDERS,"medname" + "='" + name + "'",null);
+        return db.delete(TABLE_REMINDERS,"counter" + "='" + name + "'",null);
     }
 
     void addReminder(ArrayList al) {
@@ -141,7 +141,7 @@ public class DatabaseHandler  extends SQLiteOpenHelper {
         return ReminderList;
     }
 
-    public List getAllTips(String path) {
+    /*public List getAllTips(String path) {
         List<FirstAidCard> TipsList = new ArrayList<>();
         // Select All Query
         String selectQuery = "SELECT  * FROM " + TABLE_TIPS;
@@ -161,7 +161,7 @@ public class DatabaseHandler  extends SQLiteOpenHelper {
 
         return TipsList;
     }
-
+*/
 
     // Getting Reminder Count
     public int getRemindersCount() {

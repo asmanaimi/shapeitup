@@ -48,22 +48,22 @@ public class CustomDialogClass extends Dialog implements
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.g1:
-                img=R.drawable.girlone;
+                img=R.drawable.hwoman1;
                 break;
             case R.id.g2:
-                img=R.drawable.girlthree;
+                img=R.drawable.hman1;
                 break;
             case R.id.g3:
-                img=R.drawable.girlfour;
+                img=R.drawable.hwoman2;
                 break;
             case R.id.b1:
-                img=R.drawable.boy;
+                img=R.drawable.hman2;
                 break;
             case R.id.b2:
-                img=R.drawable.boytwo;
+                img=R.drawable.hwoman3;
                 break;
             case R.id.b3:
-                img=R.drawable.boythree;
+                img=R.drawable.hman3;
                 break;
             default:
                 break;

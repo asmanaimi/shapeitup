@@ -18,7 +18,7 @@ import androidx.viewpager.widget.ViewPager;
 public class CustomAdapter extends PagerAdapter {
 
     Context context;
-    int[] imageId = {R.drawable.tip1, R.drawable.tip2, R.drawable.tip3,R.drawable.tip4,R.drawable.tip5};
+    int[] imageId = {R.drawable.tipa, R.drawable.tipsleep1, R.drawable.tipd,R.drawable.tipm,R.drawable.tipn,R.drawable.tipyoga1};
 
     public CustomAdapter(Context context){
         this.context = context;

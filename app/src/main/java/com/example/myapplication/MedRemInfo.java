@@ -2,6 +2,9 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -113,10 +116,9 @@ public class MedRemInfo extends AppCompatActivity {
         onBackPressed();
     }
 
-    public void delete(View view) {
-
-        DatabaseHandler dh= new DatabaseHandler(this);
-        if(dh.deleteReminder(ar.get(0).toString())>0)
+    public void open() {
+        DatabaseHandler db= new DatabaseHandler(this);
+        if(db.deleteReminder(ar.get(0).toString())>0)
         {
             Toast.makeText(this, "Alarm Deleted Successfully", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(this,MainActivity.class);
@@ -125,4 +127,28 @@ public class MedRemInfo extends AppCompatActivity {
             startActivity(intent);
         }
     }
-}
+
+    public void delete(View view){
+        DatabaseHandler db= new DatabaseHandler(this);
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+        alertDialogBuilder.setMessage("Are you sure, You wanted to delete Task");
+                alertDialogBuilder.setPositiveButton("yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                           open();
+                    }
+                });
+
+        alertDialogBuilder.setNegativeButton("No",new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                finish();
+            }
+        });
+
+        AlertDialog alertDialog = alertDialogBuilder.create();
+        alertDialog.show();
+    }
+    }
+

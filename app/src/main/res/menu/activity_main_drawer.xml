@@ -10,16 +10,16 @@
         <item
             android:id="@+id/nav_healthtips"
             android:icon="@drawable/ic_note_add_black_24dp"
-            android:title="Health Tips" />
+            android:title="Live Healthy" />
         <item
             android:id="@+id/nav_medinfo"
             android:icon="@drawable/ic_info_black_24dp"
-            android:title="Know your medicine" />
+            android:title="Sport" />
 
         <item
             android:id="@+id/nav_firstaid"
-            android:icon="@drawable/ic_local_hospital_black_24dp"
-            android:title="First Aid Tips" />
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="Water Reminder" />
 
         <item
             android:id="@+id/nav_hosp"

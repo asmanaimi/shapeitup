@@ -28,8 +28,8 @@ public class Home extends Fragment {
     private String mParam1;
     private String mParam2;
     GridView grid;
-    String[] text = { "Med Reminder","Health Tips","Know Your Med","First Aid Tips","Nearby Hospitals" };
-    int[] imageId = { R.drawable.med_remind,R.drawable.health_tips,R.drawable.med,R.drawable.firstaidtips,R.drawable.hospitals};
+    String[] text = { "Med Reminder","Live Healthy","Sport","Water Reminder","Nearby Hospitals" };
+    int[] imageId = { R.drawable.medecines,R.drawable.prog,R.drawable.pedo,R.drawable.water,R.drawable.hospitalsnb};
 
     private OnFragmentInteractionListener mListener;
 
@@ -120,7 +120,7 @@ public class Home extends Fragment {
                     }
                     case 1 :
                     {
-                        HealthTips rm=new HealthTips();
+                        LiveHealthy rm=new LiveHealthy();
                         FragmentTransaction transaction = getFragmentManager().beginTransaction();
                         transaction.addToBackStack(null);
                         transaction.replace(R.id.container,rm).commit();
@@ -128,7 +128,7 @@ public class Home extends Fragment {
                     }
                     case 2 :
                     {
-                        Knowmed rm=new Knowmed();
+                        sport rm=new sport();
                         FragmentTransaction transaction = getFragmentManager().beginTransaction();
                         transaction.addToBackStack(null);
                         transaction.replace(R.id.container,rm).commit();
@@ -136,7 +136,7 @@ public class Home extends Fragment {
                     }
                     case 3 :
                     {
-                        FirstAidTips rm=new FirstAidTips();
+                        WaterDrinking rm=new WaterDrinking();
                         FragmentTransaction transaction = getFragmentManager().beginTransaction();
                         transaction.addToBackStack(null);
                         transaction.replace(R.id.container,rm).commit();

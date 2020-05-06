@@ -28,7 +28,7 @@ import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener , FragmentReminder.OnFragmentInteractionListener ,Nearbyhosp.OnFragmentInteractionListener,
        AboutUs.OnFragmentInteractionListener
-        ,HealthTips.OnFragmentInteractionListener,Home.OnFragmentInteractionListener,FirstAidTipsHome.OnFragmentInteractionListener
+        ,Home.OnFragmentInteractionListener
  {
 
     public ImageView iv;
@@ -41,11 +41,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(),R.mipmap.ic_launcher);
 
-        setTaskDescription( new ActivityManager.TaskDescription("Care For U",bitmap));
+        setTaskDescription( new ActivityManager.TaskDescription("Shape it up",bitmap));
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        setTitle("Care for U");
+        setTitle("Shape it up");
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
 
@@ -171,8 +171,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             // Handle the camera action
         } else if (id == R.id.nav_firstaid) {
-            FirstAidTipsHome ft=new FirstAidTipsHome();
-            getSupportFragmentManager().beginTransaction().replace(R.id.container,ft).commit();
+            //FirstAidTipsHome ft=new FirstAidTipsHome();
+            //getSupportFragmentManager().beginTransaction().replace(R.id.container,ft).commit();
 
 
         } else if (id == R.id.nav_hosp) {
@@ -181,7 +181,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
         } else if (id == R.id.nav_medinfo) {
-            Knowmed km=new Knowmed();
+            sport km=new sport();
             getSupportFragmentManager().beginTransaction().replace(R.id.container,km).commit();
 
 
@@ -202,8 +202,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             cdd.show();
         }
         else if (id == R.id.nav_healthtips) {
-            HealthTips ht=new HealthTips();
-            getSupportFragmentManager().beginTransaction().replace(R.id.container,ht).commit();
+            //HealthTips ht=new HealthTips();
+            //getSupportFragmentManager().beginTransaction().replace(R.id.container,ht).commit();
 
 
         }
