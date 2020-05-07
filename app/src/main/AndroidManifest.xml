@@ -25,6 +25,8 @@
         <activity android:name=".Obese" />
         <activity android:name=".NormalWeight" />
         <activity android:name=".fooditemsDisplay" />
+        <activity android:name=".ViewExercisesActivity"></activity>
+        <activity android:name=".ListExercisesActivity" />
         <activity android:name=".DietPlan" />
         <activity
             android:name=".AlarmActivity"
